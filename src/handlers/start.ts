@@ -1,6 +1,6 @@
 import { Composer, Markup } from 'telegraf';
 
-export const Start = Composer.command('start', async (ctx) => {
+export const Start = Composer.command('mstart', async (ctx) => {
     let text =
         `Hi <a href="tg://user?id=${ctx.from.id}">${ctx.from.first_name} ${ctx.from.last_name}</a>\n` +
         `I Play Songs in Group Voice Chats.\n` +
