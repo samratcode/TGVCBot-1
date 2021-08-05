@@ -5,7 +5,7 @@ import { commandExtractor } from '../utils';
 import { JioSaavnSongResponse, JioSaavnSongSearchResponse } from '../types/jiosaavn.response';
 import { playOrQueueSong } from '../tgcalls';
 
-export const JioSaavnPlay = Composer.command(['jiosaavn', 'jsvn'], async (ctx) => {
+export const JioSaavnPlay = Composer.command(['splay', 'js'], async (ctx) => {
     
     await ctx.telegram.sendChatAction(ctx.chat.id, "typing");
 
